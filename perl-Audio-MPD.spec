@@ -5,7 +5,7 @@
 %define		pdir	Audio
 %define		pnam	MPD
 Summary:	Audio::MPD is a perl module for developing MPD
-Summary(pl.UTF-8):	Audio::MPD to moduł perla do wtorzenia apikacji dla MPD
+Summary(pl.UTF-8):	Audio::MPD to moduł perla do rozwijania apikacji dla MPD
 Name:		perl-Audio-MPD
 Version:	0.18.1
 Release:	1
@@ -25,8 +25,8 @@ Audio::MPD is a perl module for developing MPD (Music Player Daemon)
 clients and other scripts that control the MPD server.
 
 %description -l pl.UTF-8
-Audio::MPD to moduł perla do tworzenia klientow i innych skryptow
-kontrolujących dla serwera MPD (Music Player Daemon)
+Audio::MPD to moduł perla do rozwijania klientów i innych skryptów
+kontrolujących serwer MPD (Music Player Daemon).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
