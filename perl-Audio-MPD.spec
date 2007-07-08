@@ -4,15 +4,15 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	MPD
-Summary:	Audio::MPD is a perl module for developing MPD
-Summary(pl.UTF-8):	Audio::MPD to moduł perla do rozwijania apikacji dla MPD
+Summary:	Audio::MPD - a Perl module for developing MPD
+Summary(pl.UTF-8):	Audio::MPD - moduł perla do rozwijania apikacji dla MPD
 Name:		perl-Audio-MPD
 Version:	0.18.1
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Audio/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b7bf749bea189eca28e268841211a49f
 URL:		http://search.cpan.org/dist/Audio-MPD/
 BuildRequires:	perl-Module-Build
@@ -22,12 +22,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Audio::MPD is a perl module for developing MPD (Music Player Daemon)
+Audio::MPD is a Perl module for developing MPD (Music Player Daemon)
 clients and other scripts that control the MPD server.
 
 %description -l pl.UTF-8
-Audio::MPD to moduł perla do rozwijania klientów i innych skryptów
-kontrolujących serwer MPD (Music Player Daemon).
+Audio::MPD to moduł Perla do rozwijania klientów i innych skryptów
+sterujących serwerem MPD (Music Player Daemon).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %attr(755,root,root) %{_bindir}/*
-%{perl_vendorlib}/Audio/
+%{perl_vendorlib}/Audio/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
