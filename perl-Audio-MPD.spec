@@ -7,13 +7,13 @@
 Summary:	Audio::MPD - a Perl module for developing MPD
 Summary(pl.UTF-8):	Audio::MPD - moduł perla do rozwijania apikacji dla MPD
 Name:		perl-Audio-MPD
-Version:	0.18.1
-Release:	1
+Version:	0.18.2
+Release:	0.1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Audio/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b7bf749bea189eca28e268841211a49f
+# Source0-md5:	82e403caee99d0ee5dbe4a0fedf6de6c
 URL:		http://search.cpan.org/dist/Audio-MPD/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
