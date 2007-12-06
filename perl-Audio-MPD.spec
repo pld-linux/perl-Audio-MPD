@@ -15,12 +15,9 @@ Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JQ/JQUELIN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d4e009e63e0e8e4b98af6a45186f497b
 URL:		http://search.cpan.org/dist/Audio-MPD/
-BuildRequires:	perl-Audio-MPD-Common
-BuildRequires:	perl-Class-Accessor
-BuildRequires:	perl-DB_File
-BuildRequires:	perl-Getopt-Euclid
+%{?with_tests:BuildRequires:	perl-Audio-MPD-Common}
+%{?with_tests:BuildRequires:	perl-Class-Accessor}
 BuildRequires:	perl-Module-Build
-BuildRequires:	perl-Proc-Daemon
 %{?with_tests:BuildRequires:	perl-Test-Pod-Coverage}
 %{?with_tests:BuildRequires:	perl-Test-Pod}
 BuildRequires:	perl-devel >= 1:5.8.0
