@@ -57,6 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %attr(755,root,root) %{_bindir}/*
-%{perl_vendorlib}/Audio/*
+%{perl_vendorlib}/Audio/MPD.pm
+%{perl_vendorlib}/Audio/MPD/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
