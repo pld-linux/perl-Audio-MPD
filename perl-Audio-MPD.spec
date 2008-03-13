@@ -10,7 +10,7 @@
 %define		pdir	Audio
 %define		pnam	MPD
 Summary:	Audio::MPD - a Perl module for developing MPD
-Summary(pl.UTF-8):	Audio::MPD - moduł perla do rozwijania aplikacji dla MPD
+Summary(pl.UTF-8):	Audio::MPD - moduł Perla do rozwijania aplikacji dla MPD
 Name:		perl-Audio-MPD
 Version:	0.19.1
 Release:	1
