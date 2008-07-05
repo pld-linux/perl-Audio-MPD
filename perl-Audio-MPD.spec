@@ -1,10 +1,4 @@
-# NOTE:
-#	- tests seems not proper for builders:
-#	  t/20-connection.t needs running smtp server and using netstat
-#	  t/{2{0,1,2,3,4,5,6},30,40} needs runnable mpd (with permissions to snd-devices)
-#	  t/2{3,6} may fail without obvious reasons
-#
-%bcond_with	tests	# perform "make test"
+%bcond_without	tests	# disable "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
