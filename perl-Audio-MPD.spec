@@ -1,4 +1,4 @@
-%bcond_without	tests	# disable "make test"
+%bcond_with	tests	# disable "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
@@ -6,13 +6,13 @@
 Summary:	Audio::MPD - a Perl module for developing MPD
 Summary(pl.UTF-8):	Audio::MPD - moduł Perla do rozwijania aplikacji dla MPD
 Name:		perl-Audio-MPD
-Version:	0.19.7
+Version:	0.19.9
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/J/JQ/JQUELIN/%{pdir}-%{pnam}-v%{version}.tar.gz
-# Source0-md5:	85c412f96ae7b89b54dc4550bf7042e7
+Source0:	http://search.cpan.org/CPAN/authors/id/J/JQ/JQUELIN/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	05d47c8a42ac2ff41909efcad48630d8
 URL:		http://search.cpan.org/dist/Audio-MPD/
 %{?with_tests:BuildRequires:	perl-Audio-MPD-Common}
 %{?with_tests:BuildRequires:	perl-Class-Accessor}
@@ -33,7 +33,7 @@ Audio::MPD to moduł Perla do rozwijania klientów i innych skryptów
 sterujących serwerem MPD (Music Player Daemon).
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-v%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Build.PL \
