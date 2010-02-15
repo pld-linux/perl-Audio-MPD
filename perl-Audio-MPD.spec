@@ -16,7 +16,7 @@ Source0:	http://search.cpan.org/CPAN/authors/id/J/JQ/JQUELIN/%{pdir}-%{pnam}-%{v
 URL:		http://search.cpan.org/dist/Audio-MPD/
 %{?with_tests:BuildRequires:	perl-Audio-MPD-Common}
 %{?with_tests:BuildRequires:	perl-Class-Accessor}
-BuildRequires:	perl-Module-Build >= 0.3601
+BuildRequires:	perl-Module-Build >= 1:0.3601
 %{?with_tests:BuildRequires:	perl-Test-Pod-Coverage}
 %{?with_tests:BuildRequires:	perl-Test-Pod}
 BuildRequires:	perl-devel >= 1:5.8.0
