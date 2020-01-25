@@ -1,6 +1,5 @@
 %bcond_with	tests	# disable "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	MPD
 Summary:	Audio::MPD - a Perl module for developing MPD
